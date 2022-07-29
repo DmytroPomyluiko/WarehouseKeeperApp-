@@ -47,13 +47,13 @@ public class PersonDetails implements UserDetails {
         return true;
     }
 
-    // This method exists to get data of current person
     @Override
     public boolean isEnabled() {
         return true;
     }
+    // This method exists to get data of current person
 
-   /* public Person getPerson(){
+    public Person getPerson(){
         return this.person;
-    }*/
+    }
 }

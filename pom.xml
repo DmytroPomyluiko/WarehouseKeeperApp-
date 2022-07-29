@@ -15,6 +15,10 @@
 	<description>Service WarehouseKeeper is using for manage of warehouse places.</description>
 	<properties>
 		<java.version>17</java.version>
+		<modelmapper.version>2.4.5</modelmapper.version>
+		<java-jwt.version>3.18.3</java-jwt.version>
+		<liquibase.version>4.14.0</liquibase.version>
+		<lombok.version>1.18.22</lombok.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -73,6 +77,8 @@
 			<artifactId>java-jwt</artifactId>
 			<version>3.18.3</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+
 	</dependencies>
 
 	<build>
