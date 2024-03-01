@@ -1,5 +1,4 @@
-**WarehouseKeeper**
-# <img src="https://raw.githubusercontent.com/bobocode-projects/resources/master/image/logo_transparent_background.png" height=50/>Welcome to the Java Fundamentals Exercises
+<img src="images/project WarehouseKeeperApp.jpg"/>WarehouseKeeper
 -----
 Manager warehouse places
 ----
