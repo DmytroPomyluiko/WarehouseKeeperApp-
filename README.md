@@ -1,4 +1,8 @@
-<img src="images/project WarehouseKeeperApp.jpg"/>WarehouseKeeper
+WarehouseKeeper
+<p align="center">
+  <img src="images/project WarehouseKeeperApp.jpg" alt="Your Image" height="200" />
+</p>
+
 -----
 Manager warehouse places
 ----
