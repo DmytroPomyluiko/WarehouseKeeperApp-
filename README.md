@@ -1,4 +1,6 @@
-WarehouseKeeper
+<p align="center">
+# WarehouseKeeperApp
+</p>
 <p align="center">
   <img src="images/project WarehouseKeeperApp.jpg" alt="Your Image" height="200" />
 </p>
