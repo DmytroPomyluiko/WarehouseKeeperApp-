@@ -1,6 +1,7 @@
 package com.warehousekeeper.root.models;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.validator.constraints.Email;
 
 import javax.persistence.*;
@@ -39,6 +40,7 @@ public class Customer {
     private String email;
 
     @OneToMany(mappedBy = "owner", fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<Storage> storages;
 
 
