@@ -20,6 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+
     private final PersonDetailsService personDetailsService;
     private final JWTFilter jwtFilter;
     @Autowired
@@ -34,17 +35,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/storages/about").permitAll()
-                .antMatchers("/auth/login", "/error", "/auth/registration","/about","/show").permitAll()
+                .antMatchers("/api/v1/auth/login", "/error", "/api/v1/auth/registration","/about","/show").permitAll()
                 .anyRequest().hasRole("ADMIN")
                 .and()
-                .formLogin().loginPage("/auth/login")
+                .formLogin().loginPage("/api/v1/auth/login")
                 .loginProcessingUrl("/process_login")
                 .defaultSuccessUrl("/storages/about", true)
-                .failureUrl("/auth/login?error")
+                .failureUrl("/api/v1/auth/login?error")
                 .and()
                 .logout()
                 .logoutUrl("/logout")
-                .logoutSuccessUrl("/auth/login")
+                .logoutSuccessUrl("/api/v1/auth/login")
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);

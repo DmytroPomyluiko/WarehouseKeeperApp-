@@ -33,12 +33,9 @@ public class StoragesService {
         return storagesRepository.findAll(pageable);
     }
 
-    public List<Storage> findAll(boolean sortBySize){
-        if(sortBySize){
-            storagesRepository.findAll(Sort.by("size"));
-        }
-            return storagesRepository.findAll();
-        }
+    public List<Storage> findAll() {
+        return storagesRepository.findAll(Sort.by("size"));
+    }
 
 
     public List<Storage> findStoragesWithPagination(Integer page, Integer storagesPerPage, boolean sortBySize){
